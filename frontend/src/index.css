@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Layout */
+  .app-card {
+    @apply bg-app-surface rounded-2xl shadow-card p-4 border border-app-border;
+  }
+
+  .app-input {
+    @apply w-full px-3 py-2 border border-app-border rounded-xl
+    focus:ring-2 focus:ring-app-primary/20 focus:outline-none bg-white
+    transition;
+  }
+
+  .app-button {
+    @apply bg-app-primary text-white px-4 py-2 rounded-xl font-semibold
+    hover:bg-app-primaryHover transition;
+  }
+
+  .app-button-outline {
+    @apply bg-white text-app-text px-4 py-2 rounded-xl font-semibold
+    border border-app-border hover:bg-gray-50 transition;
+  }
+
+  /* Board Columns */
+  .app-column {
+    @apply bg-white rounded-2xl border border-app-border shadow-soft;
+  }
+
+  .app-column-header {
+    @apply px-4 pt-4 pb-3 border-b border-app-border;
+  }
+
+  .app-column-body {
+    @apply p-4 space-y-3 min-h-[160px];
+  }
+
+  /* Column top accent bars */
+  .col-accent {
+    @apply h-1.5 rounded-t-2xl;
+  }
+  .col-accent-todo {
+    @apply bg-gray-300;
+  }
+  .col-accent-progress {
+    @apply bg-app-primary;
+  }
+  .col-accent-done {
+    @apply bg-app-success;
+  }
+
+  /* Task Card */
+  .app-task {
+    @apply bg-white rounded-2xl p-4 border border-app-border shadow-card
+    transition will-change-transform;
+  }
+
+  .app-task:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold border;
+  }
+
+  .badge-priority-low {
+    @apply bg-green-50 text-green-700 border-green-200;
+  }
+
+  .badge-priority-medium {
+    @apply bg-amber-50 text-amber-700 border-amber-200;
+  }
+
+  .badge-priority-high {
+    @apply bg-red-50 text-red-700 border-red-200;
+  }
+
+  .badge-status {
+    @apply bg-gray-50 text-gray-700 border-gray-200;
+  }
+}
+
+/* ✅ Scrollbar (كما عندك) */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1f2b;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, orangered, orangered);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+}
+::-webkit-scrollbar:horizontal {
+  height: 3px;
+}
+::-webkit-scrollbar-track:horizontal {
+  background: #1c1f2b;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to right, #3498db, #2980b9);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: linear-gradient(to right, orangered, orangered);
+}
