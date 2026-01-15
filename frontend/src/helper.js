@@ -4,7 +4,7 @@ import axios from "axios";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 
 const baseURL =
-  import.meta.env.VITE_BACKEND_BASE_URL || "http://localhost:3000";
+  import.meta.env.VITE_BACKEND_BASE_URL || "https://wee-marlie-soulaimaneportfolio-23357b65.koyeb.app";
 
 // Axios instance
 const api = axios.create({

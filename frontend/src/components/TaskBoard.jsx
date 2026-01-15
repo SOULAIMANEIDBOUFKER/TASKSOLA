@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 
 axios.defaults.withCredentials = true;
 
-const API_URL = import.meta.env.VITE_BACKEND_BASE_URL || "http://localhost:3000";
+const API_URL = import.meta.env.VITE_BACKEND_BASE_URL || "https://wee-marlie-soulaimaneportfolio-23357b65.koyeb.app";
 
 /* ------------------------- Helpers ------------------------- */
 const priorityBadgeClass = (priority) => {
