@@ -1,19 +1,16 @@
 // frontend/vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      // كل طلب يبدأ بـ /api يروح للـ backend على 5000
-      '/api': {
-        target: 'http://localhost:5000',
+      "/api/v1": {
+        target: "http://localhost:5000",
         changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, '/api')  // احتفظ بالـ /api
+        secure: false
       }
     }
   }
-})
+});
