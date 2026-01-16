@@ -11,12 +11,21 @@
     "addTask": "Add Task",
     "logout": "Logout",
     "login": "Login",
-    "signup": "Sign up"
+    "signup": "Sign up",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "notSet": "Not set",
+    "error": "Error: {{error}}"
   },
 
   "auth": {
     "login": "Login",
     "signup": "Sign up",
+    "logout": "Logout",
     "loginSuccess": "Logged in successfully",
     "signupSuccess": "Account created successfully",
     "loggingIn": "Logging in...",
@@ -29,22 +38,43 @@
 
   "tasks": {
     "total": "Total",
-    "todo": "To Do",
-    "inProgress": "In Progress",
-    "done": "Done",
+    "allTasks": "All tasks",
     "overdue": "Overdue",
     "needsAttention": "Needs attention",
     "priority": "Priority",
     "dueDate": "Due date",
     "newTask": "New Task",
     "newDescription": "New Description",
-    "noTasks": "No tasks"
-  },
+    "noTasks": "No tasks",
 
-  "priority": {
-    "low": "Low",
-    "medium": "Medium",
-    "high": "High"
+    "addTask": "Add Task",
+    "searchPlaceholder": "Search tasks...",
+    "sortRecent": "Sort: Recent",
+    "sortAlphabetical": "Sort: A → Z",
+
+    "taskDetails": "Task details",
+    "editTask": "Edit task",
+
+    "titleLabel": "Title",
+    "descriptionLabel": "Description",
+    "statusLabel": "Status",
+    "priorityLabel": "Priority",
+    "dueDateLabel": "Due date",
+
+    "newTaskTitle": "New Task",
+    "newTaskDescription": "Click edit to update this task.",
+
+    "status": {
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "done": "Done"
+    },
+
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    }
   },
 
   "validation": {
@@ -59,6 +89,24 @@
   "messages": {
     "loginError": "An error occurred during login",
     "signupError": "An error occurred during signup",
-    "freeHostingNotice": "This app is hosted on a free service, so the first request may take a few seconds."
+    "freeHostingNotice": "This app is hosted on a free service, so the first request may take a few seconds.",
+    "initialLoadingMayTake": "Loading... the first request may take a few seconds on free hosting."
+  },
+
+  "ui": {
+    "taskCount": "{{count}} task",
+    "taskCount_plural": "{{count}} tasks",
+
+    "empty": {
+      "title": "No tasks yet",
+      "description": "Create your first task to get started.",
+      "action": "Add Task"
+    },
+
+    "noResults": {
+      "title": "No results",
+      "description": "No tasks match your search.",
+      "clear": "Clear search"
+    }
   }
 }

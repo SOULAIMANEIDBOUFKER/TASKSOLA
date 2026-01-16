@@ -11,12 +11,21 @@
     "addTask": "Aufgabe hinzufügen",
     "logout": "Abmelden",
     "login": "Anmelden",
-    "signup": "Registrieren"
+    "signup": "Registrieren",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Ansehen",
+    "notSet": "Nicht gesetzt",
+    "error": "Fehler: {{error}}"
   },
 
   "auth": {
     "login": "Anmelden",
     "signup": "Registrieren",
+    "logout": "Abmelden",
     "loginSuccess": "Erfolgreich angemeldet",
     "signupSuccess": "Konto erfolgreich erstellt",
     "loggingIn": "Anmeldung läuft...",
@@ -29,22 +38,43 @@
 
   "tasks": {
     "total": "Gesamt",
-    "todo": "Zu erledigen",
-    "inProgress": "In Bearbeitung",
-    "done": "Erledigt",
+    "allTasks": "Alle Aufgaben",
     "overdue": "Überfällig",
     "needsAttention": "Benötigt Aufmerksamkeit",
     "priority": "Priorität",
     "dueDate": "Fälligkeitsdatum",
     "newTask": "Neue Aufgabe",
     "newDescription": "Neue Beschreibung",
-    "noTasks": "Keine Aufgaben"
-  },
+    "noTasks": "Keine Aufgaben",
 
-  "priority": {
-    "low": "Niedrig",
-    "medium": "Mittel",
-    "high": "Hoch"
+    "addTask": "Aufgabe hinzufügen",
+    "searchPlaceholder": "Aufgaben suchen...",
+    "sortRecent": "Sortieren: Neueste",
+    "sortAlphabetical": "Sortieren: A → Z",
+
+    "taskDetails": "Aufgabendetails",
+    "editTask": "Aufgabe bearbeiten",
+
+    "titleLabel": "Titel",
+    "descriptionLabel": "Beschreibung",
+    "statusLabel": "Status",
+    "priorityLabel": "Priorität",
+    "dueDateLabel": "Fälligkeitsdatum",
+
+    "newTaskTitle": "Neue Aufgabe",
+    "newTaskDescription": "Klicke auf Bearbeiten, um diese Aufgabe zu aktualisieren.",
+
+    "status": {
+      "todo": "Zu erledigen",
+      "inProgress": "In Bearbeitung",
+      "done": "Erledigt"
+    },
+
+    "priority": {
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch"
+    }
   },
 
   "validation": {
@@ -59,6 +89,24 @@
   "messages": {
     "loginError": "Beim Anmelden ist ein Fehler aufgetreten",
     "signupError": "Bei der Registrierung ist ein Fehler aufgetreten",
-    "freeHostingNotice": "Diese App wird auf einem kostenlosen Dienst gehostet. Die erste Anfrage kann etwas dauern."
+    "freeHostingNotice": "Diese App wird auf einem kostenlosen Dienst gehostet. Die erste Anfrage kann etwas dauern.",
+    "initialLoadingMayTake": "Laden... Bei Free Hosting kann die erste Anfrage ein paar Sekunden dauern."
+  },
+
+  "ui": {
+    "taskCount": "{{count}} Aufgabe",
+    "taskCount_plural": "{{count}} Aufgaben",
+
+    "empty": {
+      "title": "Noch keine Aufgaben",
+      "description": "Erstelle deine erste Aufgabe, um zu starten.",
+      "action": "Aufgabe hinzufügen"
+    },
+
+    "noResults": {
+      "title": "Keine Ergebnisse",
+      "description": "Keine Aufgaben passen zu deiner Suche.",
+      "clear": "Suche löschen"
+    }
   }
 }
